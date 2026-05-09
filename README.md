@@ -1,6 +1,6 @@
-# Docx/PPTX to PDF Converter for macOS
+# Docx/PPTX to PDF Converter for macOS (Quick Action)
 
-A macOS Quick Action that converts Microsoft Word (.docx) and PowerPoint (.pptx) files to PDF directly from Finder.
+A Guide on how to make a macOS Quick Action that converts Microsoft Word (.docx) and PowerPoint (.pptx) files to PDF directly from Finder or even just from the Desktop.
 
 ## Features
 - One-click conversion from Finder right-click menu
@@ -8,6 +8,12 @@ A macOS Quick Action that converts Microsoft Word (.docx) and PowerPoint (.pptx)
 - Saves PDF in same folder as source file
 - Supports batch conversion (select multiple files)
 - Works with .docx and .pptx files
+
+## Useful for
+- Converting lecture notes from .docx to PDF
+- Saving PowerPoint slides as PDF (preserves formatting)
+- BASICALLY Anyone who receives .pptx from teacher instead of PDF (basically my motivation)
+
 
 ## Screenshots
 <!-- TODO: Add screenshot of right-click menu showing "Convert to PDF" option -->
