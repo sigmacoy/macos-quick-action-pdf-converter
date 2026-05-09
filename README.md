@@ -12,7 +12,7 @@ A Guide on how to make a macOS Quick Action that converts Microsoft Word (.docx)
 ## Useful for
 - Converting lecture notes from .docx to PDF
 - Saving PowerPoint slides as PDF (preserves formatting)
-- BASICALLY Anyone who receives .pptx from teacher instead of PDF (basically my motivation)
+- ANYONE who receives .pptx from teacher instead of a PDF (basically my motivation)
 
 
 ## Steps
