@@ -15,12 +15,32 @@ A Guide on how to make a macOS Quick Action that converts Microsoft Word (.docx)
 - BASICALLY Anyone who receives .pptx from teacher instead of PDF (basically my motivation)
 
 
-## Screenshots
-<!-- TODO: Add screenshot of right-click menu showing "Convert to PDF" option -->
-![Quick Action in Finder](screenshots/finder-menu.png)
+## Steps
 
-<!-- TODO: Add screenshot of successful conversion -->
-![Conversion Result](screenshots/conversion-result.png)
+![Press this](screenshots/first.png)
+
+1. Configure workflow at top:
+- Workflow receives current **files or folders** in **Finder**
+- Image: {use what image you want}
+
+
+2. From Utilities, add "Run Shell Script"
+- Drag it to the middle.
+- Shell: **bin/bash**
+- Pass input: **as arguments**
+
+### Code bin/bash
+```bash
+for f in "$@"
+do
+    if [[ "$f" == *.pptx ]] || [[ "$f" == *.docx ]]; then
+        /Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf "$f" --outdir "$(dirname "$f")"
+    fi
+done
+```
+
+### So in summary, it must look like this
+![Final View](screenshots/final.png)
 
 ## Requirements
 - **macOS** (tested on Ventura and later)
@@ -32,6 +52,17 @@ A Guide on how to make a macOS Quick Action that converts Microsoft Word (.docx)
 ```bash
 brew install --cask libreoffice
 ```
+
+## Q&A
+```
+Q: Conversion takes too long?
+A: First run is slower. Subsequent runs are faster.
+
+Important location to delete some custom made Quick Action:
+~/Library/Services/
+```
+
+<br>
 <br>
 <br>
 <br>
