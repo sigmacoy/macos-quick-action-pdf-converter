@@ -31,6 +31,7 @@ brew install --cask libreoffice
 <br>
 <br>
 <br>
+
 # No Homebrew installed???, oh mannn
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
